@@ -21,7 +21,11 @@ module Flexibee
         url << '/' + URI::escape("(#{filter})")
       end
       url << '.json'
-      JSON.parse(RestClient.get(url, params))
+      begin
+        JSON.parse(RestClient.get(url, params))
+      rescue RestClient::ResourceNotFound => e
+        Object.new
+      end
     end
 
   end
