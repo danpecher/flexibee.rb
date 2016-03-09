@@ -1,4 +1,5 @@
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
+
 require 'flexibee'
 require 'webmock/rspec'
 require 'vcr'
@@ -18,5 +19,14 @@ RSpec.configure do |config|
 
   config.mock_with :rspec do |mocks|
     mocks.verify_partial_doubles = true
+  end
+
+  config.before(:each) do
+    @user_id = 'pecher'
+    @login = 'danpecher'
+    @password = 'hesloheslo'
+    @company = 'esperia_test'
+
+    @flexibee = Flexibee::Client.new(@user_id, @login, @password, @company)
   end
 end

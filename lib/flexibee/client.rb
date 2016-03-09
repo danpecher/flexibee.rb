@@ -2,18 +2,25 @@ require 'rest-client'
 
 module Flexibee
   class Client
-    include Flexibee::Client::Company
-    include Flexibee::Client::Product
-    include Flexibee::Client::InvoiceType
-    include Flexibee::Client::OrderType
-
     def initialize(user_id, login, password, company_id)
       @user_id = user_id
       @login = login
       @password = password
       @company_id = company_id
 
-      @base_url = "https://#{login}:#{password}@#{user_id}.flexibee.eu:5434/c/#{company_id}"
+      @base_url = base_url
+    end
+
+    def base_url
+      "https://#{@login}:#{@password}@#{@user_id}.flexibee.eu:5434/c/#{@company_id}"
+    end
+
+    def base_response
+      get(@base_url)
+    end
+
+    def company
+      @company = Company.new(base_response)
     end
 
     def get(url, params = {}, filter = nil)

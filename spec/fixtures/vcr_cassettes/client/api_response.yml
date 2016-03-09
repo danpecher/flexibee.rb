@@ -1,0 +1,36 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://danpecher:hesloheslo@pecher.flexibee.eu:5434/c/esperia_test.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private, max-age=0, no-cache
+      Set-Cookie:
+      - lang=cs;Version=1
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Via:
+      - 1.1.flexibee-7.c.flexibee.eu
+    body:
+      encoding: UTF-8
+      string: '{"companies":{"company":{"createDt":"2015-10-17T18:26:39.692+02:00","dbNazev":"esperia_test","id":"1","licenseGroup":"04fc91491a9647d451649736ad8127e2","nazev":"esperia-test","show":"true","stavEnum":"ESTABLISHED","watchingChanges":"false"}}}'
+    http_version: 
+  recorded_at: Wed, 09 Mar 2016 12:03:39 GMT
+recorded_with: VCR 3.0.1
