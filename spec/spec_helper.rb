@@ -26,6 +26,7 @@ RSpec.configure do |config|
     @login = 'danpecher'
     @password = 'hesloheslo'
     @company = 'esperia_test'
+    # @company = 'woodies'
 
     @flexibee = Flexibee::Client.new(@user_id, @login, @password, @company)
   end

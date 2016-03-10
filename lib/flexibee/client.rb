@@ -62,6 +62,10 @@ module Flexibee
         get("#{@base_url}/cenik", params, filter)['winstrom']['cenik']).product_list
     end
 
+    def tree(params = {}, filter = nil)
+      @tree = Tree.new(get("#{@base_url}/strom", params, filter)['winstrom']['strom'])
+    end
+
     ##
     # flexibee base call methods
     ##
@@ -71,7 +75,7 @@ module Flexibee
       end
       url << '.json'
       begin
-        JSON.parse(RestClient.get(url, params))
+        JSON.parse(RestClient.get(url, params: params))
       rescue RestClient::ResourceNotFound => e
         Object.new
       end
