@@ -2,6 +2,25 @@ require 'rest-client'
 
 module Flexibee
   class Client
+    ##
+    # working with base response from flexibee
+    #
+    # {
+    #   "companies" => {
+    #     "company" => {
+    #       "createDt" => "2015-10-17T18:26:39.692+02:00",
+    #       "dbNazev" => "esperia_test",
+    #       "id" => "1",
+    #       "licenseGroup" => "04fc91491a9647d451649736ad8127e2",
+    #       "nazev" => "esperia-test",
+    #       "show" => "true",
+    #       "stavEnum" => "ESTABLISHED",
+    #       "watchingChanges" => "false"
+    #     }
+    #   }
+    # }
+    ##
+
     def initialize(user_id, login, password, company_id)
       @user_id = user_id
       @login = login
@@ -19,10 +38,22 @@ module Flexibee
       get(@base_url)
     end
 
+    ##
+    # flexibee obejcts
+    ##
     def company
       @company = Company.new(base_response)
     end
 
+    def invoice_types(params = {}, filter = nil)
+      @invoice_types = InvoiceTypes.new(
+        get("#{base_url}/typ-faktury-vydane",
+          params, filter)['winstrom']['typ-faktury-vydane']).invoice_types
+    end
+
+    ##
+    # flexibee base call methods
+    ##
     def get(url, params = {}, filter = nil)
       unless filter.nil?
         url << '/' + URI::escape("(#{filter})")
