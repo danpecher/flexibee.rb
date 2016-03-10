@@ -18,30 +18,14 @@ module Flexibee
     #   }
     # }
     ##
-    attr_accessor :base_response
+    attr_accessor :info, :id, :name, :db_name, :created_at
 
-    def initialize(base_response)
-      @base_response = base_response
-    end
-
-    def info
-      base_response['companies']['company']
-    end
-
-    def id
-      info['id']
-    end
-
-    def name
-      info['nazev']
-    end
-
-    def db_name
-      info['dbNazev']
-    end
-
-    def created_at
-      info['createDt']
+    def initialize(response)
+      @info = response['companies']['company']
+      @id = response['companies']['company']['id']
+      @name = response['companies']['company']['nazev']
+      @db_name = response['companies']['company']['dbNazev']
+      @created_at = response['companies']['company']['createDt']
     end
   end
 end

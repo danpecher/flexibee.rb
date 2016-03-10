@@ -42,7 +42,7 @@ module Flexibee
     # flexibee obejcts
     ##
     def company
-      @company = Company.new(base_response)
+      @company ||= Company.new(base_response)
     end
 
     def invoice_types(params = {}, filter = nil)
