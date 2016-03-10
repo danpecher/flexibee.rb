@@ -57,6 +57,11 @@ module Flexibee
           params, filter)['winstrom']['typ-objednavky-vydane']).order_types
     end
 
+    def products(params = {}, filter = nil)
+      @products = Products.new(
+        get("#{@base_url}/cenik", params, filter)['winstrom']['cenik']).product_list
+    end
+
     ##
     # flexibee base call methods
     ##
