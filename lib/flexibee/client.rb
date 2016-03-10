@@ -51,6 +51,12 @@ module Flexibee
           params, filter)['winstrom']['typ-faktury-vydane']).invoice_types
     end
 
+    def order_types(params = {}, filter = nil)
+      @order_types = OrderTypes.new(
+        get("#{@base_url}/typ-objednavky-vydane",
+          params, filter)['winstrom']['typ-objednavky-vydane']).order_types
+    end
+
     ##
     # flexibee base call methods
     ##
