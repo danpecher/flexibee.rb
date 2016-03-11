@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://danpecher:hesloheslo@pecher.flexibee.eu:5434/c/esperia_test.json
+    uri: https://danpecher:hesloheslo@pecher.flexibee.eu:5434/c/woodies.json
     body:
       encoding: US-ASCII
       string: ''
@@ -30,7 +30,7 @@ http_interactions:
       - 1.1.flexibee-7.c.flexibee.eu
     body:
       encoding: UTF-8
-      string: '{"companies":{"company":{"createDt":"2015-10-17T18:26:39.692+02:00","dbNazev":"esperia_test","id":"1","licenseGroup":"04fc91491a9647d451649736ad8127e2","nazev":"esperia-test","show":"true","stavEnum":"ESTABLISHED","watchingChanges":"false"}}}'
+      string: '{"companies":{"company":{"createDt":"2016-03-10T14:07:42.673+01:00","dbNazev":"woodies","id":"1","licenseGroup":"04fc91491a9647d451649736ad8127e2","nazev":"woodies_test","show":"true","stavEnum":"ESTABLISHED","watchingChanges":"false"}}}'
     http_version: 
-  recorded_at: Wed, 09 Mar 2016 12:03:39 GMT
+  recorded_at: Fri, 11 Mar 2016 08:22:18 GMT
 recorded_with: VCR 3.0.1

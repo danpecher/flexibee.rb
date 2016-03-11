@@ -21,7 +21,7 @@ describe Flexibee::OrderTypes, vcr: true do
     end
 
     it 'gets type updated_at' do
-      expect(@example.updated_at).to eql("2010-05-13T00:00:00+02:00")
+      expect(@example.updated_at).to eql("2016-01-12T12:34:15.422+01:00")
     end
 
     it 'gets type code' do
@@ -37,7 +37,7 @@ describe Flexibee::OrderTypes, vcr: true do
     end
 
     it 'gets type currency_ref' do
-      expect(@example.currency_ref).to eql("/c/esperia_test/mena/31.json")
+      expect(@example.currency_ref).to eql("/c/woodies/mena/31.json")
     end
 
     it 'gets type currency_name' do

@@ -4,11 +4,11 @@ describe Flexibee::Company, vcr: true do
       VCR.use_cassette 'client/api_response' do
         expect(@flexibee.company.info).
           to eql({
-            'createDt' => '2015-10-17T18:26:39.692+02:00',
-            'dbNazev' => 'esperia_test',
+            'createDt' => '2016-03-10T14:07:42.673+01:00',
+            'dbNazev' => 'woodies',
             'id' => '1',
             'licenseGroup' => '04fc91491a9647d451649736ad8127e2',
-            'nazev' => 'esperia-test',
+            'nazev' => 'woodies_test',
             'show' => 'true',
             'stavEnum' => 'ESTABLISHED',
             'watchingChanges' => 'false' })
@@ -19,7 +19,7 @@ describe Flexibee::Company, vcr: true do
   describe '#db_name' do
     it 'gets only company DB name' do
       VCR.use_cassette 'client/api_response' do
-        expect(@flexibee.company.db_name).to eql('esperia_test')
+        expect(@flexibee.company.db_name).to eql('woodies')
       end
     end
   end
@@ -27,7 +27,7 @@ describe Flexibee::Company, vcr: true do
   describe '#name' do
     it 'gets only company name' do
       VCR.use_cassette 'client/api_response' do
-        expect(@flexibee.company.name).to eql('esperia-test')
+        expect(@flexibee.company.name).to eql('woodies_test')
       end
     end
   end
@@ -43,7 +43,7 @@ describe Flexibee::Company, vcr: true do
   describe '#created_at' do
     it 'gets only company created_at' do
       VCR.use_cassette 'client/api_response' do
-        expect(@flexibee.company.created_at).to eql('2015-10-17T18:26:39.692+02:00')
+        expect(@flexibee.company.created_at).to eql('2016-03-10T14:07:42.673+01:00')
       end
     end
   end

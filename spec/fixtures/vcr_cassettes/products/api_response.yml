@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://danpecher:hesloheslo@pecher.flexibee.eu:5434/c/esperia_test/cenik.json
+    uri: https://danpecher:hesloheslo@pecher.flexibee.eu:5434/c/woodies/cenik.json
     body:
       encoding: US-ASCII
       string: ''
@@ -27,111 +27,32 @@ http_interactions:
       Content-Type:
       - application/json
       Content-Length:
-      - '4449'
+      - '4277'
       Via:
       - 1.1.flexibee-6.c.flexibee.eu
     body:
-      encoding: ASCII-8BIT
-      string: !binary |-
-        eyJ3aW5zdHJvbSI6eyJAdmVyc2lvbiI6IjEuMCIsImNlbmlrIjpbeyJpZCI6
-        IjQ3OTYiLCJsYXN0VXBkYXRlIjoiMjAxNS0wOS0xNlQxNjo1OTo1OC42NDYr
-        MDI6MDAiLCJrb2QiOiJCMDAwMSIsIm5hemV2IjoiWnbDvWhvZG7Em27DvSBu
-        YWJpamVjw60gYmFsw63EjWVrIHBybyBpUGhvbmUgNS81Uy82LzZTLzYgUGx1
-        cy82UyBQbHVzIiwiY2VuYVpha2wiOiI2NjEuMTU3MDI1IiwiY2VuYVpha2xC
-        ZXpEcGgiOiI2NjEuMTU3MDI1IiwiY2VuYVpha2xWY0RwaCI6IjgwMC4wIiwi
-        c3piRHBoIjoiMjEuMCJ9LHsiaWQiOiI0Nzk3IiwibGFzdFVwZGF0ZSI6IjIw
-        MTUtMDktMzBUMTU6NDI6NDUuMTkwKzAyOjAwIiwia29kIjoiQjAwMDIiLCJu
-        YXpldiI6IkTDoW1za8O9IHp2w71ob2RuxJtuw70gYmFsw63EjWVrIEVwaWNv
-        IEhlcm8gYm9keSAyMDE1IHBybyBpUGhvbmUgNSIsImNlbmFaYWtsIjoiMTM2
-        MS4xNTcwMjQiLCJjZW5hWmFrbEJlekRwaCI6IjEzNjEuMTU3MDI0IiwiY2Vu
-        YVpha2xWY0RwaCI6IjE2NDYuOTk5OTk5Iiwic3piRHBoIjoiMjEuMCJ9LHsi
-        aWQiOiI0Nzk4IiwibGFzdFVwZGF0ZSI6IjIwMTUtMDktMzBUMTU6NDY6Mjgu
-        MTY1KzAyOjAwIiwia29kIjoiQjAwMDMiLCJuYXpldiI6IlDDoW5za8O9IHp2
-        w71ob2RuxJtuw70gYmFsw63EjWVrIEVwaWNvIEhlcm8gQm9keSAyMDE1IHBy
-        byBpUGhvbmUgNS81UyIsImNlbmFaYWtsIjoiMTM2MS4xNTcwMjQiLCJjZW5h
-        WmFrbEJlekRwaCI6IjEzNjEuMTU3MDI0IiwiY2VuYVpha2xWY0RwaCI6IjE2
-        NDYuOTk5OTk5Iiwic3piRHBoIjoiMjEuMCJ9LHsiaWQiOiI0Nzk5IiwibGFz
-        dFVwZGF0ZSI6IjIwMTUtMDktMzBUMTU6NDg6MjEuODI3KzAyOjAwIiwia29k
-        IjoiQjAwMDQiLCJuYXpldiI6IkTDoW1za8O9IHp2w71ob2RuxJtuw70gYmFs
-        w63EjWVrIEVwaWNvIEhlcm8gQm9keSAyMDE1IHBybyBpUGhvbmUgNiIsImNl
-        bmFaYWtsIjoiMTM2MS4xNTcwMjQiLCJjZW5hWmFrbEJlekRwaCI6IjEzNjEu
-        MTU3MDI0IiwiY2VuYVpha2xWY0RwaCI6IjE2NDYuOTk5OTk5Iiwic3piRHBo
-        IjoiMjEuMCJ9LHsiaWQiOiI0ODAwIiwibGFzdFVwZGF0ZSI6IjIwMTUtMDkt
-        MzBUMTU6NDg6MzYuMDYzKzAyOjAwIiwia29kIjoiQjAwMDUiLCJuYXpldiI6
-        IlDDoW5za8O9IHp2w71ob2RuxJtuw70gYmFsw63EjWVrIEVwaWNvIEhlcm8g
-        Qm9keSAyMDE1IHBybyBpUGhvbmUgNiIsImNlbmFaYWtsIjoiMTM2MS4xNTcw
-        MjQiLCJjZW5hWmFrbEJlekRwaCI6IjEzNjEuMTU3MDI0IiwiY2VuYVpha2xW
-        Y0RwaCI6IjE2NDYuOTk5OTk5Iiwic3piRHBoIjoiMjEuMCJ9LHsiaWQiOiIx
-        IiwibGFzdFVwZGF0ZSI6IjIwMTUtMDgtMTBUMTM6MzI6MjYuNjQ1KzAyOjAw
-        Iiwia29kIjoiQ0FTSF9ERUxJVkVSWSIsIm5hemV2IjoiRm9ybWEgw7pocmFk
-        eSAtIGRvYsOtcmthIiwiY2VuYVpha2wiOiIyMDUuNzg1MTI0IiwiY2VuYVph
-        a2xCZXpEcGgiOiIyMDUuNzg1MTI0IiwiY2VuYVpha2xWY0RwaCI6IjI0OS4w
-        Iiwic3piRHBoIjoiMjEuMCJ9LHsiaWQiOiI0MjM1IiwibGFzdFVwZGF0ZSI6
-        IjIwMTUtMDgtMTBUMTM6MzI6MjYuNjQ1KzAyOjAwIiwia29kIjoixIxQIERP
-        QsONUktBIiwibmF6ZXYiOiIuLi4iLCJjZW5hWmFrbCI6IjIwNS43ODUxMjQi
-        LCJjZW5hWmFrbEJlekRwaCI6IjIwNS43ODUxMjQiLCJjZW5hWmFrbFZjRHBo
-        IjoiMjQ5LjAiLCJzemJEcGgiOiIyMS4wIn0seyJpZCI6IjQxNzYiLCJsYXN0
-        VXBkYXRlIjoiMjAxNS0wOC0xMFQxMzozMjoyNi42NDUrMDI6MDAiLCJrb2Qi
-        OiLEjFAgRE9QT1IgRE9Cw41SS0EiLCJuYXpldiI6IsSMZXNrw6EgcG/FoXRh
-        IC0gUGxhdGJhIG5hIGRvYsOtcmt1IiwiY2VuYVpha2wiOiIyMDUuNzg1MTI0
-        IiwiY2VuYVpha2xCZXpEcGgiOiIyMDUuNzg1MTI0IiwiY2VuYVpha2xWY0Rw
-        aCI6IjI0OS4wIiwic3piRHBoIjoiMjEuMCJ9LHsiaWQiOiIyIiwibGFzdFVw
-        ZGF0ZSI6IjIwMTUtMDgtMTBUMTM6MzI6MjYuNjQ1KzAyOjAwIiwia29kIjoi
-        xIxQIERPUE9SIEtBUlRBIiwibmF6ZXYiOiLEjGVza8OhIHBvxaF0YSAtIERv
-        cG9ydcSNZW7DoSB6w6FzaWxrYSwgcGxhdGJhIGthcnRvdSIsImNlbmFaYWts
-        IjoiMjA1Ljc4NTEyNCIsImNlbmFaYWtsQmV6RHBoIjoiMjA1Ljc4NTEyNCIs
-        ImNlbmFaYWtsVmNEcGgiOiIyNDkuMCIsInN6YkRwaCI6IjIxLjAifSx7Imlk
-        IjoiMTQxOSIsImxhc3RVcGRhdGUiOiIyMDE1LTA4LTEwVDEzOjMyOjI2LjY0
-        NSswMjowMCIsImtvZCI6IsSMUCBET1BPUiBQxZhFVk9EIiwibmF6ZXYiOiLE
-        jGVza8OhIHBvxaF0YSAtIERvcG9ydcSNZW7DoSB6w6FzaWxrYSwgcGxhdGJh
-        IHDFmWV2b2RlbSIsImNlbmFaYWtsIjoiMjA1Ljc4NTEyNCIsImNlbmFaYWts
-        QmV6RHBoIjoiMjA1Ljc4NTEyNCIsImNlbmFaYWtsVmNEcGgiOiIyNDkuMCIs
-        InN6YkRwaCI6IjIxLjAifSx7ImlkIjoiNDIzNiIsImxhc3RVcGRhdGUiOiIy
-        MDE1LTA4LTEwVDEzOjMyOjI2LjY0NSswMjowMCIsImtvZCI6IsSMUCBLQVJU
-        QSIsIm5hemV2IjoiLi4uIiwiY2VuYVpha2wiOiIyMDUuNzg1MTI0IiwiY2Vu
-        YVpha2xCZXpEcGgiOiIyMDUuNzg1MTI0IiwiY2VuYVpha2xWY0RwaCI6IjI0
-        OS4wIiwic3piRHBoIjoiMjEuMCJ9LHsiaWQiOiIxNDE3IiwibGFzdFVwZGF0
-        ZSI6IjIwMTUtMDgtMTBUMTM6MzI6MjYuNjQ1KzAyOjAwIiwia29kIjoixIxQ
-        IE9CWcSMIEtBUlRBIiwibmF6ZXYiOiLEjGVza8OhIHBvxaF0YSAtIE9iecSN
-        ZWpuw6EgesOhc2lsa2EsICBwbGF0YmEga2FydG91IiwiY2VuYVpha2wiOiIy
-        MDUuNzg1MTI0IiwiY2VuYVpha2xCZXpEcGgiOiIyMDUuNzg1MTI0IiwiY2Vu
-        YVpha2xWY0RwaCI6IjI0OS4wIiwic3piRHBoIjoiMjEuMCJ9LHsiaWQiOiIx
-        NDE4IiwibGFzdFVwZGF0ZSI6IjIwMTUtMDgtMTBUMTM6MzI6MjYuNjQ1KzAy
-        OjAwIiwia29kIjoixIxQIE9CWcSMIFDFmEVWT0QiLCJuYXpldiI6IsSMZXNr
-        w6EgcG/FoXRhIC0gT2J5xI1lam7DoSB6w6FzaWxrYSwgcGxhdGJhIHDFmWV2
-        b2RlbSIsImNlbmFaYWtsIjoiMjA1Ljc4NTEyNCIsImNlbmFaYWtsQmV6RHBo
-        IjoiMjA1Ljc4NTEyNCIsImNlbmFaYWtsVmNEcGgiOiIyNDkuMCIsInN6YkRw
-        aCI6IjIxLjAifSx7ImlkIjoiNDIzNyIsImxhc3RVcGRhdGUiOiIyMDE1LTA4
-        LTEwVDEzOjMyOjI2LjY0NSswMjowMCIsImtvZCI6IsSMUCBQxZhFVk9EIiwi
-        bmF6ZXYiOiIuLi4iLCJjZW5hWmFrbCI6IjIwNS43ODUxMjQiLCJjZW5hWmFr
-        bEJlekRwaCI6IjIwNS43ODUxMjQiLCJjZW5hWmFrbFZjRHBoIjoiMjQ5LjAi
-        LCJzemJEcGgiOiIyMS4wIn0seyJpZCI6IjQyNTQiLCJsYXN0VXBkYXRlIjoi
-        MjAxNS0wOC0xMFQxMzozMjoyNi42NDUrMDI6MDAiLCJrb2QiOiJESExfREUi
-        LCJuYXpldiI6IlRyYW5zcG9ydCAtIERITCIsImNlbmFaYWtsIjoiMjA1Ljc4
-        NTEyNCIsImNlbmFaYWtsQmV6RHBoIjoiMjA1Ljc4NTEyNCIsImNlbmFaYWts
-        VmNEcGgiOiIyNDkuMCIsInN6YkRwaCI6IjIxLjAifSx7ImlkIjoiNDI1MyIs
-        Imxhc3RVcGRhdGUiOiIyMDE1LTA4LTEwVDEzOjMyOjI2LjY0NSswMjowMCIs
-        ImtvZCI6IkRPQklSS0FfREUxIiwibmF6ZXYiOiJOYWNobmFobWUiLCJjZW5h
-        WmFrbCI6IjIwNS43ODUxMjQiLCJjZW5hWmFrbEJlekRwaCI6IjIwNS43ODUx
-        MjQiLCJjZW5hWmFrbFZjRHBoIjoiMjQ5LjAiLCJzemJEcGgiOiIyMS4wIn0s
-        eyJpZCI6IjQyNDciLCJsYXN0VXBkYXRlIjoiMjAxNS0wOC0xMFQxMzozMjoy
-        Ni42NDUrMDI6MDAiLCJrb2QiOiJET0JJUktBX0hVMSIsIm5hemV2IjoiVXTD
-        oW52w6l0IiwiY2VuYVpha2wiOiIyMDUuNzg1MTI0IiwiY2VuYVpha2xCZXpE
-        cGgiOiIyMDUuNzg1MTI0IiwiY2VuYVpha2xWY0RwaCI6IjI0OS4wIiwic3pi
-        RHBoIjoiMjEuMCJ9LHsiaWQiOiI0MjQ4IiwibGFzdFVwZGF0ZSI6IjIwMTUt
-        MDgtMTBUMTM6MzI6MjYuNjQ1KzAyOjAwIiwia29kIjoiRE9CSVJLQV9QTDEi
-        LCJuYXpldiI6IlBvYnJhbmllIiwiY2VuYVpha2wiOiIyMDUuNzg1MTI0Iiwi
-        Y2VuYVpha2xCZXpEcGgiOiIyMDUuNzg1MTI0IiwiY2VuYVpha2xWY0RwaCI6
-        IjI0OS4wIiwic3piRHBoIjoiMjEuMCJ9LHsiaWQiOiI0MTgwIiwibGFzdFVw
-        ZGF0ZSI6IjIwMTUtMDgtMTBUMTM6MzI6MjYuNjQ1KzAyOjAwIiwia29kIjoi
-        RE9CSVJLQV9TSzEiLCJuYXpldiI6IkRvYmllcmthIiwiY2VuYVpha2wiOiIy
-        MDUuNzg1MTI0IiwiY2VuYVpha2xCZXpEcGgiOiIyMDUuNzg1MTI0IiwiY2Vu
-        YVpha2xWY0RwaCI6IjI0OS4wIiwic3piRHBoIjoiMjEuMCJ9LHsiaWQiOiI0
-        MjE4IiwibGFzdFVwZGF0ZSI6IjIwMTUtMDgtMTBUMTM6MzI6MjYuNjQ1KzAy
-        OjAwIiwia29kIjoiRE9QT1JVQ0VOQV9DWjEiLCJuYXpldiI6IsSMZXNrw6Eg
-        cG/FoXRhIC0gRG9wb3J1xI1lbsOhIHrDoXNpbGthIiwiY2VuYVpha2wiOiIy
-        MDUuNzg1MTI0IiwiY2VuYVpha2xCZXpEcGgiOiIyMDUuNzg1MTI0IiwiY2Vu
-        YVpha2xWY0RwaCI6IjI0OS4wIiwic3piRHBoIjoiMjEuMCJ9XX19
+      encoding: UTF-8
+      string: '{"winstrom":{"@version":"1.0","cenik":[{"id":"2346","lastUpdate":"2016-01-05T12:16:42.106+01:00","kod":"ADI-001-BLK-42","nazev":"Tenisky
+        STAN SMITH Black/Black","cenaZakl":"2299.0","cenaZaklBezDph":"1900.0","cenaZaklVcDph":"2299.0","szbDph":"21.0"},{"id":"2347","lastUpdate":"2015-12-18T15:08:25.385+01:00","kod":"ADI-001-BLK-427","nazev":"Tenisky
+        STAN SMITH Black/Black","cenaZakl":"2299.0","cenaZaklBezDph":"1900.0","cenaZaklVcDph":"2299.0","szbDph":"21.0"},{"id":"2348","lastUpdate":"2015-12-18T15:08:37.147+01:00","kod":"ADI-001-BLK-433","nazev":"Tenisky
+        STAN SMITH Black/Black","cenaZakl":"2299.0","cenaZaklBezDph":"1900.0","cenaZaklVcDph":"2299.0","szbDph":"21.0"},{"id":"2762","lastUpdate":"2016-02-06T18:07:29.433+01:00","kod":"ADI-001-BLK-44","nazev":"Tenisky
+        STAN SMITH Black/Black","cenaZakl":"2299.0","cenaZaklBezDph":"1900.0","cenaZaklVcDph":"2299.0","szbDph":"21.0"},{"id":"2349","lastUpdate":"2015-12-18T15:08:47.421+01:00","kod":"ADI-001-BLK-447","nazev":"Tenisky
+        STAN SMITH Black/Black","cenaZakl":"2299.0","cenaZaklBezDph":"1900.0","cenaZaklVcDph":"2299.0","szbDph":"21.0"},{"id":"2350","lastUpdate":"2015-12-18T15:08:56.808+01:00","kod":"ADI-001-BLK-453","nazev":"Tenisky
+        STAN SMITH Black/Black","cenaZakl":"2299.0","cenaZaklBezDph":"1900.0","cenaZaklVcDph":"2299.0","szbDph":"21.0"},{"id":"2763","lastUpdate":"2016-02-06T18:10:39.919+01:00","kod":"ADI-001-BLK-46","nazev":"Tenisky
+        STAN SMITH Black/Black","cenaZakl":"2299.0","cenaZaklBezDph":"1900.0","cenaZaklVcDph":"2299.0","szbDph":"21.0"},{"id":"2351","lastUpdate":"2015-12-18T15:09:06.631+01:00","kod":"ADI-002-BLK-367","nazev":"Tenisky
+        TUBULAR DEFIANT Black","cenaZakl":"3299.0","cenaZaklBezDph":"2726.446281","cenaZaklVcDph":"3299.0","szbDph":"21.0"},{"id":"2352","lastUpdate":"2015-12-18T15:09:22.426+01:00","kod":"ADI-002-BLK-373","nazev":"Tenisky
+        TUBULAR DEFIANT Black","cenaZakl":"3299.0","cenaZaklBezDph":"2726.446281","cenaZaklVcDph":"3299.0","szbDph":"21.0"},{"id":"2764","lastUpdate":"2016-02-06T18:13:32.215+01:00","kod":"ADI-002-BLK-38","nazev":"Tenisky
+        TUBULAR DEFIANT Black","cenaZakl":"3299.0","cenaZaklBezDph":"2726.446281","cenaZaklVcDph":"3299.0","szbDph":"21.0"},{"id":"2353","lastUpdate":"2015-12-18T15:09:55.683+01:00","kod":"ADI-002-BLK-387","nazev":"Tenisky
+        TUBULAR DEFIANT Black","cenaZakl":"3299.0","cenaZaklBezDph":"2726.446281","cenaZaklVcDph":"3299.0","szbDph":"21.0"},{"id":"2354","lastUpdate":"2015-12-18T15:10:31.188+01:00","kod":"ADI-002-BLK-393","nazev":"Tenisky
+        TUBULAR DEFIANT Black","cenaZakl":"3299.0","cenaZaklBezDph":"2726.446281","cenaZaklVcDph":"3299.0","szbDph":"21.0"},{"id":"2765","lastUpdate":"2016-02-06T18:14:20.163+01:00","kod":"ADI-002-BLK-40","nazev":"Tenisky
+        TUBULAR DEFIANT Black","cenaZakl":"3299.0","cenaZaklBezDph":"2726.446281","cenaZaklVcDph":"3299.0","szbDph":"21.0"},{"id":"2355","lastUpdate":"2015-12-18T15:12:27.761+01:00","kod":"ADI-003-BLK-42","nazev":"Tenisky
+        LOS ANGELES Black","cenaZakl":"2399.0","cenaZaklBezDph":"1982.644628","cenaZaklVcDph":"2399.0","szbDph":"21.0"},{"id":"2356","lastUpdate":"2015-12-18T15:13:09.016+01:00","kod":"ADI-003-BLK-427","nazev":"Tenisky
+        LOS ANGELES Black","cenaZakl":"2399.0","cenaZaklBezDph":"1982.644628","cenaZaklVcDph":"2399.0","szbDph":"21.0"},{"id":"2357","lastUpdate":"2015-12-18T15:13:47.397+01:00","kod":"ADI-003-BLK-433","nazev":"Tenisky
+        LOS ANGELES Black","cenaZakl":"2399.0","cenaZaklBezDph":"1982.644628","cenaZaklVcDph":"2399.0","szbDph":"21.0"},{"id":"2766","lastUpdate":"2016-02-06T18:15:47.310+01:00","kod":"ADI-003-BLK-44","nazev":"Tenisky
+        LOS ANGELES Black","cenaZakl":"2399.0","cenaZaklBezDph":"1982.644628","cenaZaklVcDph":"2399.0","szbDph":"21.0"},{"id":"2358","lastUpdate":"2015-12-18T15:16:14.997+01:00","kod":"ADI-003-BLK-447","nazev":"Tenisky
+        LOS ANGELES Black","cenaZakl":"2399.0","cenaZaklBezDph":"1982.644628","cenaZaklVcDph":"2399.0","szbDph":"21.0"},{"id":"2359","lastUpdate":"2015-12-18T15:16:46.085+01:00","kod":"ADI-003-BLK-453","nazev":"Tenisky
+        LOS ANGELES Black","cenaZakl":"2399.0","cenaZaklBezDph":"1982.644628","cenaZaklVcDph":"2399.0","szbDph":"21.0"},{"id":"2767","lastUpdate":"2016-02-06T18:16:41.784+01:00","kod":"ADI-003-BLK-46","nazev":"Tenisky
+        LOS ANGELES Black","cenaZakl":"2399.0","cenaZaklBezDph":"1982.644628","cenaZaklVcDph":"2399.0","szbDph":"21.0"}]}}'
     http_version: 
-  recorded_at: Thu, 10 Mar 2016 14:31:42 GMT
+  recorded_at: Fri, 11 Mar 2016 08:22:21 GMT
 recorded_with: VCR 3.0.1

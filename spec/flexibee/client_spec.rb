@@ -7,7 +7,7 @@ describe Flexibee::Client, vcr: true do
 
   describe '#base_url' do
     it 'correctly aseembles API URL' do
-      expect(@flexibee.base_url).to eql("https://danpecher:hesloheslo@pecher.flexibee.eu:5434/c/esperia_test")
+      expect(@flexibee.base_url).to eql("https://danpecher:hesloheslo@pecher.flexibee.eu:5434/c/woodies")
     end
   end
 
@@ -26,11 +26,11 @@ describe Flexibee::Client, vcr: true do
         expect(@flexibee.base_response).to eql({
           "companies" => {
             "company" => {
-              "createDt" => "2015-10-17T18:26:39.692+02:00",
-              "dbNazev" => "esperia_test",
+              "createDt" => "2016-03-10T14:07:42.673+01:00",
+              "dbNazev" => "woodies",
               "id" => "1",
               "licenseGroup" => "04fc91491a9647d451649736ad8127e2",
-              "nazev" => "esperia-test",
+              "nazev" => "woodies_test",
               "show" => "true",
               "stavEnum" => "ESTABLISHED",
               "watchingChanges" => "false"

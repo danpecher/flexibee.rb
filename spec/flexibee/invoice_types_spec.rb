@@ -17,19 +17,19 @@ describe Flexibee::InvoiceTypes, vcr: true do
     end
 
     it 'gets type id' do
-      expect(@example.id).to eql("39")
+      expect(@example.id).to eql("42")
     end
 
     it 'gets type updated_at' do
-      expect(@example.updated_at).to eql("2015-05-30T13:11:01.534+02:00")
+      expect(@example.updated_at).to eql("2015-10-29T14:21:05.576+01:00")
     end
 
     it 'gets type code' do
-      expect(@example.code).to eql("DOBROPIS ESHOP CZ")
+      expect(@example.code).to eql("DOBROPIS")
     end
 
     it 'gets type name' do
-      expect(@example.name).to eql("Opravný daňový doklad")
+      expect(@example.name).to eql("Dobropis/opravný daňový doklad ")
     end
 
     it 'gets type currency' do
@@ -37,7 +37,7 @@ describe Flexibee::InvoiceTypes, vcr: true do
     end
 
     it 'gets type currency_ref' do
-      expect(@example.currency_ref).to eql("/c/esperia_test/mena/31.json")
+      expect(@example.currency_ref).to eql("/c/woodies/mena/31.json")
     end
 
     it 'gets type currency_name' do

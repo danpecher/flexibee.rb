@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://danpecher:hesloheslo@pecher.flexibee.eu:5434/c/esperia_test/typ-objednavky-vydane.json
+    uri: https://danpecher:hesloheslo@pecher.flexibee.eu:5434/c/woodies/typ-objednavky-vydane.json
     body:
       encoding: US-ASCII
       string: ''
@@ -27,18 +27,18 @@ http_interactions:
       Content-Type:
       - application/json
       Content-Length:
-      - '248'
+      - '247'
       Via:
       - 1.1.flexibee-6.c.flexibee.eu
     body:
       encoding: ASCII-8BIT
       string: !binary |-
         eyJ3aW5zdHJvbSI6eyJAdmVyc2lvbiI6IjEuMCIsInR5cC1vYmplZG5hdmt5
-        LXZ5ZGFuZSI6W3siaWQiOiIyMiIsImxhc3RVcGRhdGUiOiIyMDEwLTA1LTEz
-        VDAwOjAwOjAwKzAyOjAwIiwia29kIjoiT0JWIiwibmF6ZXYiOiJPYmplZG7D
-        oXZrYSB2eWRhbsOhIiwibWVuYSI6ImNvZGU6Q1pLIiwibWVuYUByZWYiOiIv
-        Yy9lc3BlcmlhX3Rlc3QvbWVuYS8zMS5qc29uIiwibWVuYUBzaG93QXMiOiJD
-        Wks6IMSMZXNrw6Ega29ydW5hIn1dfX0=
+        LXZ5ZGFuZSI6W3siaWQiOiIyMiIsImxhc3RVcGRhdGUiOiIyMDE2LTAxLTEy
+        VDEyOjM0OjE1LjQyMiswMTowMCIsImtvZCI6Ik9CViIsIm5hemV2IjoiT2Jq
+        ZWRuw6F2a2EgdnlkYW7DoSIsIm1lbmEiOiJjb2RlOkNaSyIsIm1lbmFAcmVm
+        IjoiL2Mvd29vZGllcy9tZW5hLzMxLmpzb24iLCJtZW5hQHNob3dBcyI6IkNa
+        SzogxIxlc2vDoSBrb3J1bmEifV19fQ==
     http_version: 
-  recorded_at: Thu, 10 Mar 2016 13:29:17 GMT
+  recorded_at: Fri, 11 Mar 2016 08:22:20 GMT
 recorded_with: VCR 3.0.1
