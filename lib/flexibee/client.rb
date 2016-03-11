@@ -64,8 +64,9 @@ module Flexibee
 
     ##
     # By default called with { detail: full }, normal response does not have any usefull information in it
+    # Also to get whole list of categories default passes { limit: 0 } to get default pass { limit: 20 }
     ##
-    def tree(params = { detail: 'full' }, filter = nil)
+    def tree(params = { detail: 'full', limit: 0 }, filter = nil)
       @tree = Tree.new(get("#{@base_url}/strom", params, filter)['winstrom']['strom'])
     end
 
