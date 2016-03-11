@@ -43,7 +43,7 @@ module Flexibee
       @keywords = response['klicSlova']
       @description = response['popis']
       @tree_ref = response['strom@ref']
-      @parent_id = response['otec']
+      @parent_id = response['otec'].to_i
       @parent_ref = response['otec@ref']
     end
   end

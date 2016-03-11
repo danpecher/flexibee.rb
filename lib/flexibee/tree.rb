@@ -8,5 +8,9 @@ module Flexibee
         @nodes << Flexibee::Node.new(node)
       end
     end
+
+    def root
+      
+    end
   end
 end

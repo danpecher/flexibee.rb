@@ -62,7 +62,10 @@ module Flexibee
         get("#{@base_url}/cenik", params, filter)['winstrom']['cenik']).product_list
     end
 
-    def tree(params = {}, filter = nil)
+    ##
+    # By default called with { detail: full }, normal response does not have any usefull information in it
+    ##
+    def tree(params = { detail: 'full' }, filter = nil)
       @tree = Tree.new(get("#{@base_url}/strom", params, filter)['winstrom']['strom'])
     end
 
