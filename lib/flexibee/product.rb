@@ -35,5 +35,9 @@ module Flexibee
       @ean = response['eanKod']
       @vat = response['szbDph'].to_f
     end
+
+    def category
+      # https://andrej-antas.flexibee.eu:5434/c/woodies/strom-cenik/(idZaznamu='2376').json?detail=full
+    end
   end
 end

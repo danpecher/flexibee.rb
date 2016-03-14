@@ -3,16 +3,21 @@ module Flexibee
     :currency_ref, :currency_name)
 
   class OrderTypes
-    attr_accessor :order_types
+    def initialize(client)
+      @client = client
+    end
 
-    def initialize(response)
-      @order_types = []
-      response.each do |type|
+    def order_types
+      find.map do |type|
         currency = type['mena'].split(':').last
         currency_name = type['mena@showAs'].split(':').last.strip
-        @order_types << Flexibee::OrderType.new(type['id'], type['lastUpdate'],
+        Flexibee::OrderType.new(type['id'], type['lastUpdate'],
           type['kod'], type['nazev'], currency, type['mena@ref'], currency_name)
       end
+    end
+
+    def find(filter=nil)
+      @client.get("/typ-objednavky-vydane", {}, filter)['winstrom']['typ-objednavky-vydane']
     end
   end
 end

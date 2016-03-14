@@ -1,0 +1,95 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://danpecher:hesloheslo@pecher.flexibee.eu:5434/c/woodies/strom/(id='10').json?detail=full&limit=0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private, max-age=0, no-cache
+      Set-Cookie:
+      - lang=cs;Version=1
+      Vary:
+      - Accept
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '480'
+      Via:
+      - 1.1.flexibee-6.c.flexibee.eu
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJ3aW5zdHJvbSI6eyJAdmVyc2lvbiI6IjEuMCIsInN0cm9tIjpbeyJpZCI6
+        IjEwIiwibGFzdFVwZGF0ZSI6IjIwMTUtMDktMTRUMTE6MTI6MTMuMTM4KzAy
+        OjAwIiwia29kIjoiZG9wIiwibmF6ZXYiOiJEb3BsxYhreSIsIm5hemV2QSI6
+        IiIsIm5hemV2QiI6IiIsIm5hemV2QyI6IiIsInN0cm9iciI6IiIsImhsYWRp
+        bmEiOiIzIiwicG9yYWRpIjoiMyIsImNlc3RhIjoiMS8xLzMvIiwia3JhdGt5
+        UG9waXMiOiIiLCJrbGljU2xvdmEiOiIiLCJwb3BpcyI6IiIsInR4dE5hZCI6
+        IiIsInR4dFBvZCI6IiIsInN0cm9tIjoiY29kZTpTVFJfQ0VOIiwic3Ryb21A
+        cmVmIjoiL2Mvd29vZGllcy9zdHJvbS1rb3Jlbi8xLmpzb24iLCJzdHJvbUBz
+        aG93QXMiOiJTVFJfQ0VOOiBTdHJvbSBjZW7DrWt1Iiwib3RlYyI6IjIiLCJv
+        dGVjQHJlZiI6Ii9jL3dvb2RpZXMvc3Ryb20vMi5qc29uIiwib3RlY0BzaG93
+        QXMiOiJQxZlpcG9qZW7DqSBwb2xvxb5reSJ9XX19
+    http_version: 
+  recorded_at: Mon, 14 Mar 2016 16:39:47 GMT
+- request:
+    method: get
+    uri: https://danpecher:hesloheslo@pecher.flexibee.eu:5434/c/woodies/strom/(id='10').json?detail=full&limit=0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private, max-age=0, no-cache
+      Set-Cookie:
+      - lang=cs;Version=1
+      Vary:
+      - Accept
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '480'
+      Via:
+      - 1.1.flexibee-6.c.flexibee.eu
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJ3aW5zdHJvbSI6eyJAdmVyc2lvbiI6IjEuMCIsInN0cm9tIjpbeyJpZCI6
+        IjEwIiwibGFzdFVwZGF0ZSI6IjIwMTUtMDktMTRUMTE6MTI6MTMuMTM4KzAy
+        OjAwIiwia29kIjoiZG9wIiwibmF6ZXYiOiJEb3BsxYhreSIsIm5hemV2QSI6
+        IiIsIm5hemV2QiI6IiIsIm5hemV2QyI6IiIsInN0cm9iciI6IiIsImhsYWRp
+        bmEiOiIzIiwicG9yYWRpIjoiMyIsImNlc3RhIjoiMS8xLzMvIiwia3JhdGt5
+        UG9waXMiOiIiLCJrbGljU2xvdmEiOiIiLCJwb3BpcyI6IiIsInR4dE5hZCI6
+        IiIsInR4dFBvZCI6IiIsInN0cm9tIjoiY29kZTpTVFJfQ0VOIiwic3Ryb21A
+        cmVmIjoiL2Mvd29vZGllcy9zdHJvbS1rb3Jlbi8xLmpzb24iLCJzdHJvbUBz
+        aG93QXMiOiJTVFJfQ0VOOiBTdHJvbSBjZW7DrWt1Iiwib3RlYyI6IjIiLCJv
+        dGVjQHJlZiI6Ii9jL3dvb2RpZXMvc3Ryb20vMi5qc29uIiwib3RlY0BzaG93
+        QXMiOiJQxZlpcG9qZW7DqSBwb2xvxb5reSJ9XX19
+    http_version: 
+  recorded_at: Mon, 14 Mar 2016 16:39:48 GMT
+recorded_with: VCR 3.0.1

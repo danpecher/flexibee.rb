@@ -3,17 +3,21 @@ module Flexibee
     :currency_ref, :currency_name)
 
   class InvoiceTypes
+    def initialize(client)
+      @client = client
+    end
 
-    attr_accessor :invoice_types
-
-    def initialize(response)
-      @invoice_types = []
-      response.each do |type|
+    def invoice_types
+      find.map do |type|
         currency = type['mena'].split(':').last
         currency_name = type['mena@showAs'].split(':').last.strip
-        @invoice_types << Flexibee::InvoiceType.new(type['id'], type['lastUpdate'],
+        Flexibee::InvoiceType.new(type['id'], type['lastUpdate'],
           type['kod'], type['nazev'], currency, type['mena@ref'], currency_name)
       end
+    end
+
+    def find(filter=nil)
+      @client.get("/typ-faktury-vydane", {}, filter)['winstrom']['typ-faktury-vydane']
     end
   end
 end

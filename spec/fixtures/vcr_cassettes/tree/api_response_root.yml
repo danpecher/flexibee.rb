@@ -1,0 +1,48 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://danpecher:hesloheslo@pecher.flexibee.eu:5434/c/woodies/strom/(hladina='1').json?detail=full&limit=0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private, max-age=0, no-cache
+      Set-Cookie:
+      - lang=cs;Version=1
+      Vary:
+      - Accept
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '409'
+      Via:
+      - 1.1.flexibee-6.c.flexibee.eu
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJ3aW5zdHJvbSI6eyJAdmVyc2lvbiI6IjEuMCIsInN0cm9tIjpbeyJpZCI6
+        IjEiLCJsYXN0VXBkYXRlIjoiMjAxNS0wNS0yOFQwOTo0MDoxMS45NzErMDI6
+        MDAiLCJrb2QiOiJTVFJfQ0VOIiwibmF6ZXYiOiJTdHJvbSBjZW7DrWt1Iiwi
+        bmF6ZXZBIjoiIiwibmF6ZXZCIjoiIiwibmF6ZXZDIjoiIiwic3Ryb2JyIjoi
+        IiwiaGxhZGluYSI6IjEiLCJwb3JhZGkiOiIxIiwiY2VzdGEiOiIxLyIsImty
+        YXRreVBvcGlzIjoiIiwia2xpY1Nsb3ZhIjoiIiwicG9waXMiOiIiLCJ0eHRO
+        YWQiOiIiLCJ0eHRQb2QiOiIiLCJzdHJvbSI6ImNvZGU6U1RSX0NFTiIsInN0
+        cm9tQHJlZiI6Ii9jL3dvb2RpZXMvc3Ryb20ta29yZW4vMS5qc29uIiwic3Ry
+        b21Ac2hvd0FzIjoiU1RSX0NFTjogU3Ryb20gY2Vuw61rdSIsIm90ZWMiOiIi
+        fV19fQ==
+    http_version: 
+  recorded_at: Mon, 14 Mar 2016 16:39:41 GMT
+recorded_with: VCR 3.0.1

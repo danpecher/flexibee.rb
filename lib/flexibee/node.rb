@@ -31,7 +31,7 @@ module Flexibee
     attr_accessor :id, :updated_at, :code, :name, :level, :order, :route, :short_description,
       :keywords, :description, :tree_ref, :parent_id, :parent_ref, :tree
 
-    def initialize(response)
+    def initialize(response, tree)
       @id = response['id'].to_i
       @updated_at = response['lastUpdate']
       @code = response['kod']
@@ -45,20 +45,21 @@ module Flexibee
       @tree_ref = response['strom@ref']
       @parent_id = response['otec'].to_i
       @parent_ref = response['otec@ref']
+      @tree = tree
     end
 
     ##
     # all children of the node
     ##
     def descendants
-      tree.nodes.select { |node| node.parent_id == id }
+      tree.children_of(id)
     end
 
     ##
     # parent of the node
     ##
     def parent
-      tree.nodes.select { |node| node.id == parent_id }.first
+      tree.parent_for(parent_id).first
     end
   end
 end

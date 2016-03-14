@@ -1,8 +1,8 @@
 describe Flexibee::Product, vcr: true do
   before do
     VCR.use_cassette 'product/api_response' do
-      @product ||= @flexibee.product_list.first
-      @product_last ||= @flexibee.product_list.last
+      @product ||= @flexibee.product_list.all.first
+      @product_last ||= @flexibee.product_list.all.last
     end
   end
 

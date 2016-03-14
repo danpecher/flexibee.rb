@@ -20,7 +20,6 @@ module Flexibee
     #   }
     # }
     ##
-
     def initialize(user_id, login, password, company_id)
       @user_id = user_id
       @login = login
@@ -44,28 +43,23 @@ module Flexibee
     end
 
     def invoice_types(params = {}, filter = nil)
-      @invoice_types = InvoiceTypes.new(
-        get("/typ-faktury-vydane", params, filter)['winstrom']['typ-faktury-vydane']).invoice_types
+      @invoice_types = InvoiceTypes.new(self).invoice_types
     end
 
     def order_types(params = {}, filter = nil)
-      @order_types = OrderTypes.new(
-        get("/typ-objednavky-vydane", params, filter)['winstrom']['typ-objednavky-vydane']).order_types
+      @order_types = OrderTypes.new(self).order_types
     end
 
-    ##
-    # By default called with { detail: 'full' }, normal response does not have any usefull information in it
-    ##
-    def product_list(params = { detail: 'full' }, filter = nil)
-      @products = ProductList.new(self).product_list
+    def product_list
+      @products = ProductList.new(self)
     end
 
     ##
     # By default called with { detail: 'full' }, normal response does not have any usefull information in it
     # Also to get whole list of categories default passes { limit: 0 } to get default pass { limit: 20 }
     ##
-    def tree(params = { detail: 'full', limit: 0 }, filter = nil)
-      @tree = Tree.new(get("/strom", params, filter)['winstrom']['strom'])
+    def tree
+      @tree = Tree.new(self)
     end
 
     ##
@@ -74,7 +68,7 @@ module Flexibee
     def get(route='', params = {}, filter = nil)
       url = base_url + route
       unless filter.nil?
-        url << '/' + URI::escape("(#{filter})")
+        url << '/' + "(#{ERB::Util.url_encode(filter)})"
       end
       url << '.json'
       begin

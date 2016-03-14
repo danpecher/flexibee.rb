@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://danpecher:hesloheslo@pecher.flexibee.eu:5434/c/woodies.json
+    uri: https://danpecher:hesloheslo@pecher.flexibee.eu:5434/c/woodies/strom/(id='0').json?detail=full&limit=0
     body:
       encoding: US-ASCII
       string: ''
@@ -22,15 +22,17 @@ http_interactions:
       - private, max-age=0, no-cache
       Set-Cookie:
       - lang=cs;Version=1
+      Vary:
+      - Accept
       Content-Type:
       - application/json
-      Transfer-Encoding:
-      - chunked
+      Content-Length:
+      - '42'
       Via:
       - 1.1.flexibee-6.c.flexibee.eu
     body:
       encoding: UTF-8
-      string: '{"companies":{"company":{"createDt":"2016-03-10T14:07:42.673+01:00","dbNazev":"woodies","id":"1","licenseGroup":"04fc91491a9647d451649736ad8127e2","nazev":"woodies_test","show":"true","stavEnum":"ESTABLISHED","watchingChanges":"false"}}}'
+      string: '{"winstrom":{"@version":"1.0","strom":[]}}'
     http_version: 
-  recorded_at: Mon, 14 Mar 2016 16:39:21 GMT
+  recorded_at: Mon, 14 Mar 2016 16:39:49 GMT
 recorded_with: VCR 3.0.1

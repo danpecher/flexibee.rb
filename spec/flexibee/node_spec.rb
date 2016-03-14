@@ -1,8 +1,8 @@
 describe Flexibee::Node, vcr: true do
   before do
     VCR.use_cassette 'tree/api_response' do
-      @node ||= @flexibee.tree.nodes.first
-      @node_last ||= @flexibee.tree.nodes.last
+      @node ||= @flexibee.tree.all.first
+      @node_last ||= @flexibee.tree.all.last
     end
   end
 
@@ -106,19 +106,25 @@ describe Flexibee::Node, vcr: true do
 
   describe '#descendants' do
     it 'gets descendants of current node' do
-      expect(@node.descendants).to all( be_an(Flexibee::Node) )
-      expect(@node.descendants).to all( have_attributes(parent_id: @node.id) )
+      VCR.use_cassette 'node/api_response_descendants' do
+        expect(@node.descendants).to all( be_an(Flexibee::Node) )
+        expect(@node.descendants).to all( have_attributes(parent_id: @node.id) )
+        expect(@node.descendants).to all( have_attributes(level: @node.level+1) )
 
-      expect(@node_last.descendants).to be_empty
+        expect(@node_last.descendants).to be_empty
+      end
     end
   end
 
   describe '#parent' do
     it 'gets parent of the node' do
-      expect(@node.parent).to be_nil
+      VCR.use_cassette 'node/api_response_parent' do
+        expect(@node.parent).to be_nil
 
-      expect(@node_last.parent).to be_an(Flexibee::Node)
-      expect(@node_last.parent_id).to eql(@node_last.parent_id)
+        expect(@node_last.parent).to be_an(Flexibee::Node)
+        expect(@node_last.parent.level).to eql(@node_last.level-1)
+        expect(@node_last.parent_id).to eql(@node_last.parent_id)
+      end
     end
   end
 end
