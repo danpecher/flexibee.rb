@@ -32,5 +32,5 @@ http_interactions:
       encoding: UTF-8
       string: '{"companies":{"company":{"createDt":"2016-03-10T14:07:42.673+01:00","dbNazev":"woodies","id":"1","licenseGroup":"04fc91491a9647d451649736ad8127e2","nazev":"woodies_test","show":"true","stavEnum":"ESTABLISHED","watchingChanges":"false"}}}'
     http_version: 
-  recorded_at: Mon, 14 Mar 2016 10:54:08 GMT
+  recorded_at: Mon, 14 Mar 2016 10:53:04 GMT
 recorded_with: VCR 3.0.1

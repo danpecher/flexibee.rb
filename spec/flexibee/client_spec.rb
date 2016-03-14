@@ -14,7 +14,7 @@ describe Flexibee::Client, vcr: true do
   describe '#get' do
     it 'gets a response from an api' do
       VCR.use_cassette 'client/api_response' do
-        response = @flexibee.get(@flexibee.base_url)
+        response = @flexibee.get
         expect(response).to include('companies')
       end
     end

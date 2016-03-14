@@ -26,8 +26,6 @@ module Flexibee
       @login = login
       @password = password
       @company_id = company_id
-
-      @base_url = base_url
     end
 
     def base_url
@@ -35,7 +33,7 @@ module Flexibee
     end
 
     def base_response
-      get(@base_url)
+      get
     end
 
     ##
@@ -47,33 +45,34 @@ module Flexibee
 
     def invoice_types(params = {}, filter = nil)
       @invoice_types = InvoiceTypes.new(
-        get("#{base_url}/typ-faktury-vydane",
-          params, filter)['winstrom']['typ-faktury-vydane']).invoice_types
+        get("/typ-faktury-vydane", params, filter)['winstrom']['typ-faktury-vydane']).invoice_types
     end
 
     def order_types(params = {}, filter = nil)
       @order_types = OrderTypes.new(
-        get("#{@base_url}/typ-objednavky-vydane",
-          params, filter)['winstrom']['typ-objednavky-vydane']).order_types
-    end
-
-    def products(params = {}, filter = nil)
-      @products = Products.new(
-        get("#{@base_url}/cenik", params, filter)['winstrom']['cenik']).product_list
+        get("/typ-objednavky-vydane", params, filter)['winstrom']['typ-objednavky-vydane']).order_types
     end
 
     ##
-    # By default called with { detail: full }, normal response does not have any usefull information in it
+    # By default called with { detail: 'full' }, normal response does not have any usefull information in it
+    ##
+    def product_list(params = { detail: 'full' }, filter = nil)
+      @products = ProductList.new(self).product_list
+    end
+
+    ##
+    # By default called with { detail: 'full' }, normal response does not have any usefull information in it
     # Also to get whole list of categories default passes { limit: 0 } to get default pass { limit: 20 }
     ##
     def tree(params = { detail: 'full', limit: 0 }, filter = nil)
-      @tree = Tree.new(get("#{@base_url}/strom", params, filter)['winstrom']['strom'])
+      @tree = Tree.new(get("/strom", params, filter)['winstrom']['strom'])
     end
 
     ##
     # flexibee base call methods
     ##
-    def get(url, params = {}, filter = nil)
+    def get(route='', params = {}, filter = nil)
+      url = base_url + route
       unless filter.nil?
         url << '/' + URI::escape("(#{filter})")
       end

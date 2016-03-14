@@ -1,7 +1,7 @@
 describe Flexibee::Company, vcr: true do
   describe '#info' do
     it 'gets all the company information' do
-      VCR.use_cassette 'client/api_response' do
+      VCR.use_cassette 'company/api_response' do
         expect(@flexibee.company.info).
           to eql({
             'createDt' => '2016-03-10T14:07:42.673+01:00',
@@ -18,7 +18,7 @@ describe Flexibee::Company, vcr: true do
 
   describe '#db_name' do
     it 'gets only company DB name' do
-      VCR.use_cassette 'client/api_response' do
+      VCR.use_cassette 'company/api_response' do
         expect(@flexibee.company.db_name).to eql('woodies')
       end
     end
@@ -26,7 +26,7 @@ describe Flexibee::Company, vcr: true do
 
   describe '#name' do
     it 'gets only company name' do
-      VCR.use_cassette 'client/api_response' do
+      VCR.use_cassette 'company/api_response' do
         expect(@flexibee.company.name).to eql('woodies_test')
       end
     end
@@ -34,7 +34,7 @@ describe Flexibee::Company, vcr: true do
 
   describe '#id' do
     it 'gets only company id' do
-      VCR.use_cassette 'client/api_response' do
+      VCR.use_cassette 'company/api_response' do
         expect(@flexibee.company.id).to eql('1')
       end
     end
@@ -42,7 +42,7 @@ describe Flexibee::Company, vcr: true do
 
   describe '#created_at' do
     it 'gets only company created_at' do
-      VCR.use_cassette 'client/api_response' do
+      VCR.use_cassette 'company/api_response' do
         expect(@flexibee.company.created_at).to eql('2016-03-10T14:07:42.673+01:00')
       end
     end
