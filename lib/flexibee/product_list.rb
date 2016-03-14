@@ -30,9 +30,9 @@ module Flexibee
     end
 
     private
-    
+
     def create_products(response)
-      response.map { |p| Flexibee::Product.new(p) }
+      response.map { |p| Flexibee::Product.new(p, @client) }
     end
   end
 end

@@ -1,4 +1,5 @@
 require 'rest-client'
+require 'erb'
 
 module Flexibee
   class Client

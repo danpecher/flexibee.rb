@@ -21,7 +21,7 @@ module Flexibee
     #   "szbDph" => "21.0"
     # }
     ##
-    def initialize(response)
+    def initialize(response, client)
       @id = response['id'].to_i
       @updated_at = response['lastUpdate']
       @code = response['kod']
@@ -34,10 +34,17 @@ module Flexibee
       @description = response['popis']
       @ean = response['eanKod']
       @vat = response['szbDph'].to_f
+      @client = client
     end
 
+    # TODO test
     def category
-      # https://andrej-antas.flexibee.eu:5434/c/woodies/strom-cenik/(idZaznamu='2376').json?detail=full
+      @client.tree.find_by_id(find_relationship['uzel'].to_i).first
+    end
+
+    # TODO test
+    def find_relationship
+      @client.get("/strom-cenik", { detail: 'full' }, "idZaznamu='#{id}'")['winstrom']['strom-cenik'][0]
     end
   end
 end
