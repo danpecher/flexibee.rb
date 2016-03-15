@@ -96,4 +96,13 @@ describe Flexibee::Product, vcr: true do
       expect(@product_last.vat).to eql(21.0)
     end
   end
+
+  describe '#category' do
+    it 'gets product category (node)' do
+      VCR.use_cassette 'product/api_response_category' do
+        expect(@product.category.name).to eql('Tenisky')
+        expect(@product_last.category).to be_nil
+      end
+    end
+  end
 end

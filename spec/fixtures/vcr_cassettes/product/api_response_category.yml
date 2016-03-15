@@ -1,0 +1,189 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://danpecher:hesloheslo@pecher.flexibee.eu:5434/c/woodies/strom-cenik/(idZaznamu='2346').json?detail=full
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private, max-age=0, no-cache
+      Set-Cookie:
+      - lang=cs;Version=1
+      Vary:
+      - Accept
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '199'
+      Via:
+      - 1.1.flexibee-6.c.flexibee.eu
+    body:
+      encoding: UTF-8
+      string: '{"winstrom":{"@version":"1.0","strom-cenik":[{"id":"4875","lastUpdate":"2015-12-18T16:16:12.315+01:00","idZaznamu":"2346","uzel":"25","uzel@ref":"/c/woodies/strom/25.json","uzel@showAs":"Tenisky"}]}}'
+    http_version: 
+  recorded_at: Tue, 15 Mar 2016 15:08:07 GMT
+- request:
+    method: get
+    uri: https://danpecher:hesloheslo@pecher.flexibee.eu:5434/c/woodies/strom-cenik/(idZaznamu='2346').json?detail=full
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private, max-age=0, no-cache
+      Set-Cookie:
+      - lang=cs;Version=1
+      Vary:
+      - Accept
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '199'
+      Via:
+      - 1.1.flexibee-6.c.flexibee.eu
+    body:
+      encoding: UTF-8
+      string: '{"winstrom":{"@version":"1.0","strom-cenik":[{"id":"4875","lastUpdate":"2015-12-18T16:16:12.315+01:00","idZaznamu":"2346","uzel":"25","uzel@ref":"/c/woodies/strom/25.json","uzel@showAs":"Tenisky"}]}}'
+    http_version: 
+  recorded_at: Tue, 15 Mar 2016 15:08:08 GMT
+- request:
+    method: get
+    uri: https://danpecher:hesloheslo@pecher.flexibee.eu:5434/c/woodies/strom/(id='25').json?detail=full&limit=0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private, max-age=0, no-cache
+      Set-Cookie:
+      - lang=cs;Version=1
+      Vary:
+      - Accept
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '471'
+      Via:
+      - 1.1.flexibee-6.c.flexibee.eu
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJ3aW5zdHJvbSI6eyJAdmVyc2lvbiI6IjEuMCIsInN0cm9tIjpbeyJpZCI6
+        IjI1IiwibGFzdFVwZGF0ZSI6IjIwMTYtMDItMDJUMTY6NDU6MTQuNjUxKzAx
+        OjAwIiwia29kIjoiVGVuaXNreSIsIm5hemV2IjoiVGVuaXNreSIsIm5hemV2
+        QSI6IiIsIm5hemV2QiI6IiIsIm5hemV2QyI6IiIsInN0cm9iciI6IiIsImhs
+        YWRpbmEiOiI0IiwicG9yYWRpIjoiMSIsImNlc3RhIjoiMS8xLzIvMS8iLCJr
+        cmF0a3lQb3BpcyI6IiIsImtsaWNTbG92YSI6IiIsInBvcGlzIjoiIiwidHh0
+        TmFkIjoiIiwidHh0UG9kIjoiIiwic3Ryb20iOiJjb2RlOlNUUl9DRU4iLCJz
+        dHJvbUByZWYiOiIvYy93b29kaWVzL3N0cm9tLWtvcmVuLzEuanNvbiIsInN0
+        cm9tQHNob3dBcyI6IlNUUl9DRU46IFN0cm9tIGNlbsOta3UiLCJvdGVjIjoi
+        MTciLCJvdGVjQHJlZiI6Ii9jL3dvb2RpZXMvc3Ryb20vMTcuanNvbiIsIm90
+        ZWNAc2hvd0FzIjoiQm90eSJ9XX19
+    http_version: 
+  recorded_at: Tue, 15 Mar 2016 15:08:08 GMT
+- request:
+    method: get
+    uri: https://danpecher:hesloheslo@pecher.flexibee.eu:5434/c/woodies/strom-cenik/(idZaznamu='2767').json?detail=full
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private, max-age=0, no-cache
+      Set-Cookie:
+      - lang=cs;Version=1
+      Vary:
+      - Accept
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '48'
+      Via:
+      - 1.1.flexibee-6.c.flexibee.eu
+    body:
+      encoding: UTF-8
+      string: '{"winstrom":{"@version":"1.0","strom-cenik":[]}}'
+    http_version: 
+  recorded_at: Tue, 15 Mar 2016 15:08:09 GMT
+- request:
+    method: get
+    uri: https://danpecher:hesloheslo@pecher.flexibee.eu:5434/c/woodies/strom-cenik/(idZaznamu='2767').json?detail=full
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*; q=0.5, application/xml"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private, max-age=0, no-cache
+      Set-Cookie:
+      - lang=cs;Version=1
+      Vary:
+      - Accept
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '48'
+      Via:
+      - 1.1.flexibee-6.c.flexibee.eu
+    body:
+      encoding: UTF-8
+      string: '{"winstrom":{"@version":"1.0","strom-cenik":[]}}'
+    http_version: 
+  recorded_at: Tue, 15 Mar 2016 15:08:09 GMT
+recorded_with: VCR 3.0.1

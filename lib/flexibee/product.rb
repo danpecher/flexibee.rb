@@ -39,7 +39,8 @@ module Flexibee
 
     # TODO test
     def category
-      @client.tree.find_by_id(find_relationship['uzel'].to_i).first
+      uzel_id = find_relationship ? find_relationship['uzel'] : find_relationship
+      uzel_id ? @client.tree.find_by_id(uzel_id.to_i).first : nil
     end
 
     # TODO test
