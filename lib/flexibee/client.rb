@@ -43,11 +43,11 @@ module Flexibee
       @company ||= Company.new(base_response)
     end
 
-    def invoice_types(params = {}, filter = nil)
+    def invoice_types
       @invoice_types = InvoiceTypes.new(self).invoice_types
     end
 
-    def order_types(params = {}, filter = nil)
+    def order_types
       @order_types = OrderTypes.new(self).order_types
     end
 
