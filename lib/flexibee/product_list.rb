@@ -1,7 +1,5 @@
 module Flexibee
   class ProductList
-    ## TODO limit, start
-
     ##
     # By default called with { detail: 'full' }, normal response does not have any usefull information in it
     ##
@@ -9,12 +7,12 @@ module Flexibee
       @client = client
     end
 
-    def all
-      create_products(find)
+    def all(params={})
+      create_products(find(nil, params))
     end
 
-    def find(filter=nil)
-      @client.get("/cenik", { detail: 'full' }, filter)['winstrom']['cenik']
+    def find(filter=nil, params={})
+      @client.get("/cenik", params.merge({ detail: 'full' }), filter)['winstrom']['cenik']
     end
 
     def find_by_id(id)

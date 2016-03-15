@@ -29,7 +29,7 @@ http_interactions:
       Content-Length:
       - '3850'
       Via:
-      - 1.1.flexibee-6.c.flexibee.eu
+      - 1.1.flexibee-7.c.flexibee.eu
     body:
       encoding: ASCII-8BIT
       string: !binary |-
@@ -120,5 +120,5 @@ http_interactions:
         L3dvb2RpZXMvbWVuYS8xMS5qc29uIiwibWVuYUBzaG93QXMiOiJFVVI6IEV1
         cm8ifV0sInN6YkRwaCI6IjIxLjAifV19fQ==
     http_version: 
-  recorded_at: Mon, 14 Mar 2016 16:39:35 GMT
+  recorded_at: Tue, 15 Mar 2016 14:42:12 GMT
 recorded_with: VCR 3.0.1
