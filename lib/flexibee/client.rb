@@ -55,6 +55,10 @@ module Flexibee
       @products = ProductList.new(self)
     end
 
+    def order_list
+      @orders = OrderList.new(self)
+    end
+
     ##
     # By default called with { detail: 'full' }, normal response does not have any usefull information in it
     # Also to get whole list of categories default passes { limit: 0 } to get default pass { limit: 20 }
