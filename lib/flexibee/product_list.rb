@@ -1,7 +1,7 @@
 module Flexibee
   class ProductList
     ##
-    # By default called with { detail: 'full' }, normal response does not have any usefull information in it
+    # By default called with { detail: 'full' }, normal response does not have any useful information in it
     ##
     def initialize(client)
       @client = client
